@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Poppins:ital,wght@0,300;0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body{
+    line-height: 1.6;
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+}
+h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    text-shadow:
+    1px 1px 0 hsl(174, 5%, 80%),
+    1px 1px 0 hsl(174, 5%, 75%),
+    1px 1px 0 hsl(174, 5%, 70%),
+    1px 1px 0 hsl(174, 5%, 65%),
+    1px 1px 0 hsl(174, 5%, 64%),
+    1px 1px 0 hsl(174, 5%, 62%),
+    1px 1px 0 hsl(174, 5%, 61%),
+    1px 1px 0 hsl(174, 5%, 60%),
+    1px 1px 0 hsl(174, 5%, 58%);
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+}
+#Search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgb(0, 0, 0,0.2);
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    
+}
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 0 6px rgb(0, 0, 0,0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:0 0 6px rgb(0, 0, 0,0.2);
+    overflow: hidden;
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8 ;
+}
+ .search-result a{
+    font-size: 24px;
+    margin-top: -7px;
+     text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #eff3ef;
+    text-transform: capitalize;
+
+ } 
+#Show-more-button{
+    background-color: #008cba;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px auto;
+    display: block;
+    border-radius: 5px;
+    display: none;
+}
+#Show-more-button:hover{
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+@media screen and (max-width:480px) {
+    .search-result{
+        width: 100%;
+        /* margin-bottom: 80px; */
+    }
+}
+
